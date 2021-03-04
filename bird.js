@@ -26,7 +26,7 @@ class Bird {
         }
     }
     draw() {
-        ctx.fillStyle = 'red';
+        ctx.fillStyle = 'black';
         ctx.fillRect(this.x, this.y, this.width, this.height);
     }
     flap() {

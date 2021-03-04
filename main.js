@@ -10,12 +10,13 @@ let frame = 0;
 let score = 0;
 let gameSpeed = 2;
 
-const gradient = ctx.createLinearGradient(0, 0, 0, 70);
-gradient.addColorStop('0.4', '#fff');
-gradient.addColorStop('0.5', '#000');
-gradient.addColorStop('0.55', '#4040ff');
-gradient.addColorStop('0.6', '#000');
-gradient.addColorStop('0.9', '#fff');
+//Create a gradient for fill styles
+// const gradient = ctx.createLinearGradient(0, 0, 0, 70);
+// gradient.addColorStop('0.4', '#fff');
+// gradient.addColorStop('0.5', '#000');
+// gradient.addColorStop('0.55', '#4040ff');
+// gradient.addColorStop('0.6', '#000');
+// gradient.addColorStop('0.9', '#fff');
 
 
 function animate() {
@@ -27,7 +28,7 @@ function animate() {
     bird.update();
     bird.draw();
 
-    ctx.fillStyle = gradient;
+    ctx.fillStyle = 'black';
     ctx.font = '90px Geogia';
     ctx.strokeText(score, 450, 70);
     ctx.fillText(score, 450, 70);
